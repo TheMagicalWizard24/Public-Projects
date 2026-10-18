@@ -6,8 +6,6 @@ def access(File):
     line = []
 
     pathway = [os.path.join(File, f) for f in os.listdir(File) if f.startswith("access")]
-
-
     for path in pathway:
         with open(path, "r") as fail:
             for i in fail:
