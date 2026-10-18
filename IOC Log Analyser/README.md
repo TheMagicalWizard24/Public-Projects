@@ -1,0 +1,3 @@
+The script checks three files: access.log, auth.log, and IOC.txt. The IOC file contains suspicious IP addresses and web paths. The script searches the access log for requests matching those indicators, then checks the authentication log for failed login attempts and counts them by IP address.
+
+It prints the findings in the terminal and saves a .txt report for later inspection. The report lists each IP address and its failed login count. In the terminal, it also shows the IP with the most failed attempts and identifies IPs with more than five failed attempts.
